@@ -1,0 +1,273 @@
+/* AEGIS — DASHBOARD */
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f3f7fa;
+  color: #14283a;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* MENÚ LATERAL */
+
+.sidebar {
+  width: 270px;
+  min-width: 270px;
+  background: #091b2d;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 30px 18px 20px;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px 12px 45px;
+  color: #49dfca;
+}
+
+.sidebar-brand strong {
+  display: block;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.sidebar-brand strong span {
+  color: #49dfca;
+}
+
+.sidebar-brand small {
+  display: block;
+  margin-top: 3px;
+  color: #7895a8;
+  font-size: 9px;
+  letter-spacing: 1.3px;
+}
+
+.sidebar-section-title {
+  padding: 0 15px;
+  margin-bottom: 15px;
+  color: #718ba0;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px;
+  border-radius: 11px;
+  color: #91a8b9;
+  font-size: 13px;
+}
+
+.nav-item.active {
+  color: #55e5d0;
+  background: rgba(73, 223, 202, 0.11);
+  font-weight: 700;
+}
+
+.nav-indicator {
+  width: 6px;
+  height: 6px;
+  margin-left: auto;
+  border-radius: 50%;
+  background: #49dfca;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+}
+
+.sidebar-security {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px 12px;
+  margin-bottom: 18px;
+  background: #112d3f;
+  border: 1px solid #204354;
+  border-radius: 12px;
+  color: #49dfca;
+}
+
+.sidebar-security strong,
+.sidebar-security span {
+  display: block;
+}
+
+.sidebar-security strong {
+  color: #fff;
+  font-size: 13px;
+}
+
+.sidebar-security span {
+  margin-top: 4px;
+  color: #8aa8b9;
+  font-size: 10px;
+}
+
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 8px 0;
+  border-top: 1px solid #20384b;
+}
+
+.profile-avatar,
+.topbar-avatar {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: #087e79;
+  color: white;
+  font-weight: 800;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.profile-details strong,
+.profile-details span {
+  display: block;
+}
+
+.profile-details strong {
+  font-size: 13px;
+}
+
+.profile-details span {
+  color: #8199aa;
+  font-size: 11px;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+.dashboard-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.topbar {
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 0 35px;
+  background: white;
+  border-bottom: 1px solid #e5edf1;
+}
+
+.topbar-left,
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 12px;
+  color: #95a3af;
+  font-size: 13px;
+}
+
+.breadcrumb strong {
+  color: #193346;
+}
+
+.topbar-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #668078;
+  font-size: 12px;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #27bd9f;
+}
+
+.icon-button,
+.mobile-menu-btn {
+  display: grid;
+  place-items: center;
+  border: none;
+  background: transparent;
+  color: #70889a;
+  padding: 8px;
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+/* BIENVENIDA */
+
+.dashboard-content {
+  max-width: 1500px;
+  margin: auto;
+  padding: 35px;
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.welcome-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #078f83;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.welcome-section h1 {
+  margin: 12px 0;
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+.welcome-section p {
+  margin: 0;
+  color: #8193a1;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.welcome-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 18px;
+  border: 1px solid #c8eae4;
+  border-radius: 12px;
+  background: #e8f8f4;
+  color: #078f83;
